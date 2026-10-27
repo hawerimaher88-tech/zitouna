@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez Zitouna, une coopérative oléicole familiale : huile d'olive extra vierge, visites du moulin et dégustations.">
+  <title>Zitouna | Huile d'olive extra vierge</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Feuille CSS du projet -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <!-- Bandeau d'annonce -->
+  <div class="announcement-bar" id="annonce">
+    <p><strong>Campagne de récolte 2026</strong> — Réservez vos visites dès maintenant !</p>
+    <button class="announcement-close" type="button" aria-label="Fermer l'annonce" onclick="document.getElementById('annonce').remove()">×</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="Zitouna - Accueil">
+        <span class="brand-mark" aria-hidden="true">Z</span><span>ZITOUNA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="histoire.html">Notre histoire</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="produits.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos huiles</a>
+            <ul class="dropdown-menu"><li><a class="dropdown-item" href="produits.html">Tous nos produits</a></li></ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="visites.html">Visites &amp; ateliers</a></li>
+          <li class="nav-item"><a class="nav-link" href="devis.php">Devis</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero : image de fond + texte centré -->
+    <section class="hero" id="accueil" aria-labelledby="titre-principal">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Coopérative oléicole familiale</p>
+        <h1 id="titre-principal">L'huile d'olive de 42 familles,<br>pressée à froid</h1>
+        <p class="hero-description">Depuis 1987, la coopérative Zitouna cultive l'excellence méditerranéenne et vous ouvre les portes de son moulin.</p>
+        <div class="hero-actions">
+          <a class="btn btn-zitouna" href="produits.html">Découvrir nos huiles</a>
+          <a class="btn btn-outline-light rounded-pill" href="visites.html">Réserver une visite</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chiffres clés -->
+    <section class="key-figures container" aria-label="Zitouna en chiffres">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3"><div class="figure-item"><strong>42</strong><span>familles productrices</span></div></div>
+        <div class="col-6 col-lg-3"><div class="figure-item"><strong>180 t</strong><span>par campagne</span></div></div>
+        <div class="col-6 col-lg-3"><div class="figure-item"><strong>60 %</strong><span>de notre production exportée</span></div></div>
+        <div class="col-6 col-lg-3"><div class="figure-item"><strong>1987</strong><span>l'année de nos débuts</span></div></div>
+      </div>
+    </section>
+
+    <!-- Histoire / engagement -->
+    <section class="section-space container" id="histoire">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="assets/img/oliveraie.jpg" class="img-fluid section-image" alt="Oliveraie méditerranéenne de la coopérative Zitouna" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <p class="eyebrow eyebrow-dark">Nos racines, notre savoir-faire</p>
+          <h2>Une histoire de familles et d'oliviers</h2>
+          <p>Depuis 1987, 42 familles partagent leur passion pour l'olivier et travaillent ensemble pour proposer une huile d'olive extra vierge de qualité.</p>
+          <p>De la récolte au moulin, nous privilégions le soin apporté aux olives et une extraction à froid qui préserve les qualités de l'huile.</p>
+          <a href="histoire.html" class="text-link">Découvrir notre histoire <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produits -->
+    <section class="section-space products-section" id="produits">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow eyebrow-dark">Le fruit de notre travail</p>
+          <h2>Nos huiles d'olive</h2>
+          <p>Des huiles issues de nos oliveraies, élaborées avec attention et passion.</p>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card product-card h-100">
+              <img src="assets/img/huile-verte.jpg" class="card-img-top product-image" alt="Bouteille d'huile d'olive extra vierge verte" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="product-label">Notre sélection</span>
+                <h3 class="card-title h5">Huile d'olive extra vierge</h3>
+                <p class="card-text">Une huile expressive, issue d'olives sélectionnées avec soin par nos producteurs.</p>
+                <a href="produits.html" class="btn btn-zitouna mt-auto align-self-start">Voir le produit</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card product-card h-100">
+              <img src="assets/img/huile-doree.jpg" class="card-img-top product-image" alt="Bouteille d'huile d'olive aux reflets dorés" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="product-label">Saveur méditerranéenne</span>
+                <h3 class="card-title h5">Huile d'olive dorée</h3>
+                <p class="card-text">Une huile délicate pour accompagner vos plats et vos recettes du quotidien.</p>
+                <a href="produits.html" class="btn btn-zitouna mt-auto align-self-start">Voir le produit</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card product-card h-100">
+              <img src="assets/img/olives.jpg" class="card-img-top product-image" alt="Olives fraîches récoltées dans l'oliveraie" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="product-label">Du verger au moulin</span>
+                <h3 class="card-title h5">Nos récoltes</h3>
+                <p class="card-text">Découvrez les olives et le travail saisonnier qui donnent naissance à nos huiles.</p>
+                <a href="histoire.html" class="btn btn-zitouna mt-auto align-self-start">Notre savoir-faire</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="text-center mt-4"><a href="produits.html" class="text-link">Voir toutes nos huiles <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <!-- Moulin moderne -->
+    <section class="section-space container" id="moulin">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+          <img src="assets/img/moulin.jpg" class="img-fluid section-image" alt="Équipements modernes du moulin d'huile d'olive Zitouna" loading="lazy">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p class="eyebrow eyebrow-dark">Tradition et technologie</p>
+          <h2>Un moulin moderne, une extraction à froid</h2>
+          <p>Notre moulin associe le savoir-faire oléicole à des équipements modernes pour transformer les olives dans de bonnes conditions.</p>
+          <ul class="check-list">
+            <li>Une attention particulière à la qualité des olives</li>
+            <li>Un procédé d'extraction à froid</li>
+            <li>Un parcours de visite pour découvrir les étapes de fabrication</li>
+          </ul>
+          <a href="visites.html" class="text-link">Visiter notre moulin <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visites -->
+    <section class="visit-banner" id="visites">
+      <div class="container visit-content text-center">
+        <p class="eyebrow">Vivez l'expérience Zitouna</p>
+        <h2>De l'olivier à la dégustation</h2>
+        <p>Entrez dans les coulisses de notre coopérative, découvrez le moulin et partagez un moment autour de l'huile d'olive.</p>
+        <a href="visites.html" class="btn btn-light rounded-pill">Préparer votre visite</a>
+      </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section class="contact-cta container section-space" id="contact">
+      <div>
+        <p class="eyebrow eyebrow-dark">Une question ? Un projet ?</p>
+        <h2>Parlons ensemble de votre besoin</h2>
+        <p>Contactez notre équipe pour en savoir plus sur nos huiles, nos visites ou une demande de devis.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-zitouna">Nous contacter</a>
+        <a href="devis.php" class="btn btn-outline-zitouna">Demander un devis</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <a class="footer-brand" href="index.html">ZITOUNA</a>
+          <p>Coopérative oléicole familiale — de nos oliviers à votre table.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="footer-title">Navigation</h2>
+          <ul class="footer-links">
+            <li><a href="histoire.html">Notre histoire</a></li>
+            <li><a href="produits.html">Nos huiles</a></li>
+            <li><a href="visites.html">Visites &amp; ateliers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2 class="footer-title">Contact</h2>
+          <ul class="footer-links">
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="devis.php">Demander un devis</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Zitouna — Tous droits réservés.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
